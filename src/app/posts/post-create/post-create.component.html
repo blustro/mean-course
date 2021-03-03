@@ -5,9 +5,10 @@
         matInput
         type="text"
         name="title"
-        ngModel
+        placeholder="Post Title"
         required
         minlength="3"
+        ngModel
         #title="ngModel"
       />
       <mat-error *ngIf="title.invalid">Please enter a post title.</mat-error>
@@ -15,10 +16,11 @@
     <mat-form-field>
       <textarea
         rows="6"
-        matInput
         name="content"
-        ngModel
+        placeholder="Post Content"
+        matInput
         required
+        ngModel
         #content="ngModel"
       ></textarea>
       <mat-error *ngIf="content.invalid"

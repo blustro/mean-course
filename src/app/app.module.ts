@@ -24,7 +24,6 @@ import { AuthModule } from './auth/auth.module';
     HttpClientModule,
     AngularMaterialModule,
     PostsModule,
-    AuthModule,
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
